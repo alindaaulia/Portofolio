@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio - Nama Kamu</title>
+
+  <!-- link font -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- NAVBAR: dipakai di semua halaman -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">Portofolio<span>.</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="aktif">Beranda</a></li>
+          <!-- Hapus tanda komentar kalau halamannya sudah dibuat:
+          <li><a href="pendidikan.html">Pendidikan</a></li>
+          <li><a href="proyek.html">Proyek</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ISI HALAMAN -->
+  <main class="container profil">
+    <div class="profil-foto">
+      <img src="img/profil.jpeg" alt="Foto profil" id="foto">
+    </div>
+
+    <div class="profil-info">
+      <p class="salam">Halo, saya</p>
+      <h1 id="nama"></h1>
+      <p class="jurusan" id="jurusan"></p>
+
+      <table id="tabel-biodata"></table>
+
+      <!-- untuk Tombol -->
+      <div class="tombol">
+        <button class="btn" id="btn-pesan">Hubungi Saya</button>
+      </div>
+    <p id="pesan" class="pesan"></p>
+    </div>
+  </main>
+
+  <section class="container pendidikan">
+    <h2>Riwayat Pendidikan</h2>
+    <table class="table-pendidikan">
+      <thead>
+        <tr><th>Jenjang</th><th>Nama Sekolah</th><th>Tahun</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>SMK</td><td>SMK Muthia Harapan Cicalengka</td><td>2019-2022</td></tr>
+        <tr><td>S1</td><td>Universitas Teknologi Bandung</td><td>2024-Sekarang</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- FOOTER: dipakai di semua halaman -->
+  <footer class="footer">
+    <p>&copy; <span id="nama-footer"></span></p>
+  </footer>
+
+    <!-- POP-UP -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="modal-tutup" id="modal-tutup" aria-label="Tutup">&times;</button>
+      <h3>Halo!!!</h3>
+      <p>Terima kasih sudah mengunjungi portofolio saya.</p>
+      <a href="mailto:alindaaulia0706@gmail.com" class="btn">Kirim Email</a>
+    </div>
+  </div>
+
+  <script src="JSTugas1.js"></script>
+</body>
+</html>
